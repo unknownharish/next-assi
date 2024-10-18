@@ -1,4 +1,3 @@
-// app/components/SearchForm.js
 
 'use client';
 
@@ -27,7 +26,6 @@ const Search = ({ types, setName }) => {
                 ))}
             </select>
 
-            {/* Input for Pokémon Name Search */}
             <div className='md:w-5/11 relative'>
 
                 <IoMdSearch size={25} className='text-gray-300 absolute top-5 left-4' />

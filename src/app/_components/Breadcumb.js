@@ -1,4 +1,3 @@
-// app/components/Breadcrumb.js
 
 import Link from 'next/link';
 
@@ -11,7 +10,7 @@ const Breadcrumb = ({ path }) => {
         const href = '/' + pathArray.slice(0, index + 1).join('/');
         return (
           <span key={crumb}>
-            <Link href={href}>
+            <Link href={crumb=="pokemon"?"/":href}>
               <span className="text-blue-500 capitalize">{crumb}</span>
             </Link>
             {index < pathArray.length - 1 && ' > '}

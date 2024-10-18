@@ -1,4 +1,3 @@
-// app/components/PokemonCard.js
 
 import Link from 'next/link';
 import { FaArrowRightLong } from "react-icons/fa6";
