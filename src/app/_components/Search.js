@@ -6,14 +6,12 @@ import { useRef, useState } from 'react';
 import { IoMdSearch } from "react-icons/io";
 
 
-const Search = ({ types, filter }) => {
+const Search = ({ types, setName }) => {
     const searchTerm = useRef(null);
     const [selectedType, setSelectedType] = useState('');
-    console.log("filter",filter)
 
     const handleSearch = function () {
-        filter = searchTerm.current.value
-        console.log("inside",filter)
+        setName(searchTerm.current.value)
     }
     return (
         <div className="mb-8 flex flex-col">
